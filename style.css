@@ -1,0 +1,70 @@
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+header > .img1{
+    position: relative;
+    left: 13px;
+    top: 50px;
+    display: inline;
+}
+header > .img2{
+    position: relative;
+    left: 33px;
+    top: 10px;
+    display: inline;
+}
+#myAnimation {
+    position: absolute;
+    background-color: rgb(255, 153, 20);
+    display:none;
+    flex-wrap:no warp;
+    overflow:hidden;
+    font-size: 1.9em;
+    padding-left: 10px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+#myAnimation2 {
+    position: absolute;
+    background-color: rgba(173, 29, 118, 0.808);
+    display:none;
+    flex-wrap:no warp;
+    overflow:hidden;
+    font-size: 1.9em;
+    padding-left: 10px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+a:hover{
+    box-shadow: rgb(151, 118, 74) 3px 3px 6px ;
+    border: 1pt rgb(151, 118, 74) solid ;
+}
+li , a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    margin-left: 3cm;
+    margin-top: 100px;
+}
+.active > a{
+    color: orange;
+    width: 40px;
+}
+.onglet.active{
+    display:block;
+}
+.onglet{
+    display:none;
+}
+nav{
+    border-bottom: 1px gray solid;
+}

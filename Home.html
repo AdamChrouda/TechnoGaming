@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>techno gaming</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/Techno.gif" alt="logo-gaming" width="200px">
+        <div class="contact">
+            <div>
+                <img class="img1"src="images/telephone.png" width="80px"alt="telephone" onclick="myMove()" onmousemove="reset()" onmouseout="reset()">
+                <div id ="myAnimation">20866916</div>
+            </div>
+            <div>
+                <img class="img2" src="images/email.png" width="120px"alt="telephone" onclick="myMove2()"onmousemove="reset()"onmouseout="reset()">
+                <div id ="myAnimation2">adamchrouda977@gmail.com</div>
+            </div>
+        </div>        
+    </header>
+    <div>
+        <nav>
+            <ul class="tabs">
+                <li class="tab active"><a href="#annonces">Acceuil</a></li>
+                <li class="tab"><a href="#panier">Achat</a></li>
+                <li class="tab"><a href="#vente">Vente</a></li>
+            </ul>
+        </nav>
+        <div class="tabs-content">
+            <div id="annonces" class="active onglet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ist 1</div>
+            <div id="panier" class="onglet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ist 2</div>
+            <div id="vente" class="onglet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ist 3</div>
+        </div>
+    </div>
+<script src="onglet.js"></script>
+<script src="header.js"></script>
+</body>
+</html>
