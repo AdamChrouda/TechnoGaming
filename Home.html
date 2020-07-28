@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@455&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="panier.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="shortcut icon" href="images/Techno.png" type="image/x-icon">
     <title>techno gaming</title>
 </head>
 <body>
@@ -11,11 +15,11 @@
         <img id="logo" src="images/Techno.gif" alt="logo-gaming" width="200px">
         <div class="contact">
             <div>
-                <img class="img1"src="images/telephone.png" width="80px"alt="telephone" onclick="myMove()" onmousemove="reset()" onmouseout="reset()">
+                <img class="img1"src="images/telephone.png" width="80px"alt="telephone" onmousedown="myMove()" onmousemove="reset()" onmouseout="reset()">
                 <div id ="myAnimation">20866916</div>
             </div>
             <div>
-                <img class="img2" src="images/email.png" width="120px"alt="telephone" onclick="myMove2()"onmousemove="reset()"onmouseout="reset()">
+                <img class="img2" src="images/email.png" width="120px"alt="telephone" onmousedown="myMove2()"onmousemove="reset()"onmouseout="reset()">
                 <div id ="myAnimation2">adamchrouda977@gmail.com</div>
             </div>
         </div>        
@@ -23,18 +27,96 @@
     <div>
         <nav>
             <ul class="tabs">
-                <li class="tab active"><a href="#annonces">Acceuil</a></li>
-                <li class="tab"><a href="#panier">Achat</a></li>
-                <li class="tab"><a href="#vente">Vente</a></li>
+                <li class=" tab active"><a class="nor" href="#annonces">Acceuil</a></li>
+                <li class=" tab"><a class="nor" href="#panier">Panier</a></li>
+                <li class="tab "><a class="minecraft" href="minecraft/minecraft.html">Minecraft</a></li>
             </ul>
         </nav>
         <div class="tabs-content">
-            <div id="annonces" class="active onglet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ist 1</div>
-            <div id="panier" class="onglet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ist 2</div>
-            <div id="vente" class="onglet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ist 3</div>
+            <div id="annonces" class="active onglet">
+                <section id="articles" class="container content-section">
+                    <div class="shop-items">
+                        <div class="shop-item">
+                            <span class="shop-item-title">Processeur Intel® Core™ i9-9900KS</span>
+                            <img src="images/prosseceur.png" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">2873.27€</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">GIGABYTE <br>Carte graphique GeForce RTX 2080 Ti-11 Go</span>
+                            <img src="images/carte graphique.jpg" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">1280.45€</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="articles" class="container content-section">
+                    <div class="shop-items">
+                        <div class="shop-item">
+                            <span class="shop-item-title">Cooler Ventilateur E97379-001 pour Intel</span>
+                            <img src="images/ventirad.jpg" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">14.90€</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">AEROCOOL Boîtier PC Cylon - <br> Avec Fenêtre pleine <br> - RGB - Format ATX - Moyen Tour - Blanc</span>
+                            <img src="images/boitier rgb.jpg" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">46.45€</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="articles" class="container content-section">
+                    <div class="shop-items">
+                        <div class="shop-item">
+                            <span class="shop-item-title">THERMALTAKE Alimentation PC Smart RGB <br> - 500W - 80PLUS White</span>
+                            <img src="images/alimentation.jpg" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">65.88€</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Carte mere MSI MPG Z390 Gaming Plus,<br> Intel Z390 - Sockel 1151</span>
+                            <img src="images/carte mere.jpg" class="shop-item-image">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">128.90€</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="panier" class="onglet">
+                <section class="container content-section">
+                    <h2 class="section-header">CART</h2>
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price">$0</span>
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                </section>
+            </div>
+            <div id="vente" class="onglet"></div>
         </div>
     </div>
 <script src="onglet.js"></script>
 <script src="header.js"></script>
+<script src="panier.js"></script>
 </body>
 </html>

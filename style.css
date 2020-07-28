@@ -1,19 +1,32 @@
+
+*{
+    font-family: 'Sora';
+}
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1360px;
+    height: 230px;
+    box-shadow: 10px 10px 20px rgb(27, 8, 8);
+    background-color: rgb(192, 192, 247);
+}
 #logo{
+    float: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 220px;
+    height: 200px;
 }
-header > .img1{
-    position: relative;
-    left: 13px;
-    top: 50px;
-    display: inline;
+.img1{
+    position: absolute;
+    left: 40px;
+    top: 30px;
 }
-header > .img2{
+.img2{
     position: relative;
-    left: 33px;
-    top: 10px;
-    display: inline;
+    top: -95px;
+    left: 18px;
 }
 #myAnimation {
     position: absolute;
@@ -21,11 +34,12 @@ header > .img2{
     display:none;
     flex-wrap:no warp;
     overflow:hidden;
-    font-size: 1.9em;
+    font-size: 1.6em;
     padding-left: 10px;
     color: white;
     border-radius: 20px;
-    margin-top: 70px;
+    top: 53px;
+    left: 111px;
 }
 #myAnimation2 {
     position: absolute;
@@ -33,17 +47,18 @@ header > .img2{
     display:none;
     flex-wrap:no warp;
     overflow:hidden;
-    font-size: 1.9em;
+    font-size: 1.6em;
     padding-left: 10px;
     color: white;
     border-radius: 20px;
-    margin-top: 70px;
+    left: 111px;
+    top: 143px;
 }
 ul{
     display: flex;
     justify-content: flex-end;
 }
-a:hover{
+.nor:hover{
     box-shadow: rgb(151, 118, 74) 3px 3px 6px ;
     border: 1pt rgb(151, 118, 74) solid ;
 }
@@ -52,8 +67,9 @@ li , a{
     text-decoration: none;
     color: black;
     font-size: 1.3em;
-    margin-left: 3cm;
+    margin-left: 50px;
     margin-top: 100px;
+    margin-right: 30px;
 }
 .active > a{
     color: orange;
@@ -67,4 +83,12 @@ li , a{
 }
 nav{
     border-bottom: 1px gray solid;
+}
+section{
+    margin-bottom: 1000px;
+}
+.minecraft:hover{
+    background-color: green;
+    border: 1px black solid;
+    color: white;
 }
